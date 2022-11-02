@@ -11,6 +11,7 @@ public class PacienteService {
     public PacienteService(iDao<Paciente> pacienteiDao){
         this.pacienteiDao = pacienteiDao;
     }
+
     public Paciente guardarPaciente(Paciente paciente){
         return pacienteiDao.guardar(paciente);
     }
