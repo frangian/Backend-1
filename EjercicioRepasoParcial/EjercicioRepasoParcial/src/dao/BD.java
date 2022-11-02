@@ -29,7 +29,6 @@ public class BD {
     public static void crearTablas(){
         Connection connection=null;
         try{
-            //drop create
             LOGGER.info("Se esta creando la tabla");
             connection=getConnection();
             Statement statement= connection.createStatement();
@@ -37,6 +36,7 @@ public class BD {
             LOGGER.info("Se creo la tabla correctamente");
         }
         catch (Exception e){
+            LOGGER.error("Se produjo un error al crear la tabla: "+e.getMessage());
             e.printStackTrace();
         }
         finally {
@@ -44,6 +44,7 @@ public class BD {
                 connection.close();
             }
             catch (Exception ex){
+            LOGGER.error("Se produjo un error al cerrar la conexion: "+ex.getMessage());
                 ex.printStackTrace();
             }
         }

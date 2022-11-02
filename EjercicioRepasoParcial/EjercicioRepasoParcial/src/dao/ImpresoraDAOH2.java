@@ -84,7 +84,7 @@ public class ImpresoraDAOH2 implements iDAO<Impresora> {
             psBuscar.setInt(1,id);
             ResultSet rs = psBuscar.executeQuery();
             while (rs.next()){
-                respuesta = new Impresora(rs.getString(1),rs.getString(2),rs.getString(3));
+                respuesta = new Impresora(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4));
             }
 
             LOGGER.info("Se realizo la busqueda de la impresora correctamente");
