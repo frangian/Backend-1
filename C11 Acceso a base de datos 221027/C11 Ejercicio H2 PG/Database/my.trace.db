@@ -1,0 +1,56 @@
+2022-10-27 11:43:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "DROP TABLE IF EXISTS TESTCREATE [*]TABLE TEST (ID INT PRIMARY KEY, NOMBRE VARCHAR (255), EDAD INT, EMPRESA VARCHAR (255), FECHAINICIO VARCHAR (8)"
+Syntax error in SQL statement "DROP TABLE IF EXISTS TESTCREATE [*]TABLE TEST (ID INT PRIMARY KEY, NOMBRE VARCHAR (255), EDAD INT, EMPRESA VARCHAR (255), FECHAINICIO VARCHAR (8)"; SQL statement:
+DROP TABLE IF EXISTS TESTCREATE TABLE TEST (ID INT PRIMARY KEY, NOMBRE VARCHAR (255), EDAD INT, EMPRESA VARCHAR (255), FECHAINICIO VARCHAR (8) [42000-214]
+2022-10-27 11:46:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE TEST (ID INT PRIMARY KEY, NOMBRE VARCHAR (255), EDAD INT, EMPRESA VARCHAR (255), FECHAINICIO VARCHAR (8)[*];"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE TEST (ID INT PRIMARY KEY, NOMBRE VARCHAR (255), EDAD INT, EMPRESA VARCHAR (255), FECHAINICIO VARCHAR (8)[*];"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE TEST (ID INT PRIMARY KEY, NOMBRE VARCHAR (255), EDAD INT, EMPRESA VARCHAR (255), FECHAINICIO VARCHAR (8); [42001-214]
+2022-10-27 11:47:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "INSERT INTO TEST VALUES (1,'PEPE',25,'DIGITAL', '22/10/2020'[*]INSERT INTO TEST VALUES (2,'JUAN',26,'FACEBOOK', '15/07/2021'INSERT INTO TEST VALUES (3,'ANA',30,'GOOGLE', '01/01/2020'"; se esperaba "[, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"
+Syntax error in SQL statement "INSERT INTO TEST VALUES (1,'PEPE',25,'DIGITAL', '22/10/2020'[*]INSERT INTO TEST VALUES (2,'JUAN',26,'FACEBOOK', '15/07/2021'INSERT INTO TEST VALUES (3,'ANA',30,'GOOGLE', '01/01/2020'"; expected "[, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO TEST VALUES (1,'PEPE',25,'DIGITAL', '22/10/2020'INSERT INTO TEST VALUES (2,'JUAN',26,'FACEBOOK', '15/07/2021'INSERT INTO TEST VALUES (3,'ANA',30,'GOOGLE', '01/01/2020' [42001-214]
+2022-10-27 11:47:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Valor demasiado largo para la columna "FECHAINICIO CHARACTER VARYING(8)": "'22/10/2020' (10)"
+Value too long for column "FECHAINICIO CHARACTER VARYING(8)": "'22/10/2020' (10)"; SQL statement:
+INSERT INTO TEST VALUES (1,'PEPE',25,'DIGITAL', '22/10/2020') [22001-214]
+2022-10-27 14:07:46 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at EmpleadoTest.main(EmpleadoTest.java:9)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 12 more
+2022-10-27 14:08:46 database: wrong user or password; user: "SA"
+org.h2.message.DbException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.engine.Engine.openSession(Engine.java:154)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at EmpleadoTest.main(EmpleadoTest.java:9)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nombre de usuario ó password incorrecto
+Wrong user name or password [28000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:510)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 12 more

@@ -1,0 +1,31 @@
+2022-10-31 14:42:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "CREATE TABLE MEDICAMENTO (ID INT PRIMARY KEY,NOMBRE VARCHAR (100),LABORATORIO VARCHAR (100) [*]INT NOT NULL,CANTIDAD INT NOT NULL,PRECIO NUMERIC (10,2) INT NOT NULL,CODIGO INT NOT NULL);"; se esperaba "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"
+Syntax error in SQL statement "CREATE TABLE MEDICAMENTO (ID INT PRIMARY KEY,NOMBRE VARCHAR (100),LABORATORIO VARCHAR (100) [*]INT NOT NULL,CANTIDAD INT NOT NULL,PRECIO NUMERIC (10,2) INT NOT NULL,CODIGO INT NOT NULL);"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE MEDICAMENTO (ID INT PRIMARY KEY,NOMBRE VARCHAR (100),LABORATORIO VARCHAR (100) INT NOT NULL,CANTIDAD INT NOT NULL,PRECIO NUMERIC (10,2) INT NOT NULL,CODIGO INT NOT NULL); [42001-214]
+2022-10-31 14:42:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEDICAMENTO" not found (this database is empty); SQL statement:
+INSERT INTO MEDICAMENTO VALUES (?,?,?,?,?,?); [42104-214]
+2022-10-31 15:17:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Este metodo no esta permitido para una sentencia preparada; en su lugar use una sentencia regular.
+This method is not allowed for a prepared statement; use a regular statement instead. [90130-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:303)
+	at presencial.DAO.MedicamentoDaoH2.buscar(MedicamentoDaoH2.java:56)
+	at presencial.SERVICE.MedicamentoService.buscar(MedicamentoService.java:19)
+	at presencial.Cliente.main(Cliente.java:17)
+2022-10-31 15:20:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Este metodo no esta permitido para una sentencia preparada; en su lugar use una sentencia regular.
+This method is not allowed for a prepared statement; use a regular statement instead. [90130-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcPreparedStatement.executeQuery(JdbcPreparedStatement.java:303)
+	at presencial.DAO.MedicamentoDaoH2.buscar(MedicamentoDaoH2.java:55)
+	at presencial.SERVICE.MedicamentoService.buscar(MedicamentoService.java:18)
+	at presencial.Cliente.main(Cliente.java:17)
