@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="176492d3-b7a5-4b1d-9221-1b5395d457a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental - copia/C15-16EjRepasoExamen-ClinicaDental.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental - copia/src/dao/OdontologoDAOH2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental - copia/src/model/Odontologo.java" afterDir="false" />
+    <list default="true" id="6613a952-9ead-4989-82a8-76fef5c9d17d" name="Changes" comment="c15v1.1">
+      <change afterPath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental - copia/C15-16EjRepasoExamen-ClinicaDental.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental - copia/src/dao/OdontologoDAOH2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental - copia/src/model/Odontologo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../C9 Integradora 221025/C9MdT/.idea/jpa-buddy.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../C9 Integradora 221025/C9MdT/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../C9 Integradora 221025/C9MdT/C9MdT.iml" afterDir="false" />
@@ -27,15 +27,17 @@
       <change afterPath="$PROJECT_DIR$/../../ExamenParcial/src/model/Odontologo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ExamenParcial/src/service/OdontologoService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../ExamenParcial/src/test/OdontologoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../clase14/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../clase14/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/C15-16EjRepasoExamen-ClinicaDental.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/C15-16EjRepasoExamen-ClinicaDental.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/dao/BD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/dao/BD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/dao/DomicilioDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/dao/DomicilioDAOH2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/dao/PacienteDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/dao/PacienteDAOH2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/model/Domicilio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/model/Domicilio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/model/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental/src/service/PacienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/C14EjProfe/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/C14EjProfe/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/C14EjProfe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/C14EjProfe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/clase14/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/clase14/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/C15-16EjRepasoExamen-ClinicaDental.iml" beforeDir="false" afterPath="$PROJECT_DIR$/C15-16EjRepasoExamen-ClinicaDental.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/BD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/BD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/DomicilioDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DomicilioDAOH2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/PacienteDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PacienteDAOH2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Domicilio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Domicilio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Paciente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/PacienteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../C9 Integradora 221025/clase9 profe/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C9 Integradora 221025/clase9 profe/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +59,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GuLz2bxTGy4avPIOUjTAh9GB6t" />
+  <component name="ProjectId" id="2Gxk1aXCTBGTutlaPuFol4vYLeS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -67,29 +69,44 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Documentos/CTD/Materias/3 bimestre/Backend/C14 Patron DAO Data Access Object/C14EjProfe",
+    "last_opened_file_path": "D:/Documentos/CTD/Materias/3 bimestre/Backend/C14 Patron DAO Data Access Object/clase14resueltoPorEmi/clase14resueltoPorEmi",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Documentos\CTD\Materias\3 bimestre\Backend\C14 Patron DAO Data Access Object\C14EjProfe\src" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="176492d3-b7a5-4b1d-9221-1b5395d457a0" name="Changes" comment="" />
-      <created>1667233782619</created>
+      <changelist id="6613a952-9ead-4989-82a8-76fef5c9d17d" name="Changes" comment="" />
+      <created>1667337409804</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1667233782619</updated>
+      <updated>1667337409804</updated>
     </task>
+    <task id="LOCAL-00001" summary="c15v1.0">
+      <created>1667337696954</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667337696954</updated>
+    </task>
+    <task id="LOCAL-00002" summary="c15v1.1">
+      <created>1667348069550</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667348069550</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,5 +119,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="c15v1.0" />
+    <MESSAGE value="c15v1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="c15v1.1" />
   </component>
 </project>

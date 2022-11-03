@@ -26,6 +26,16 @@ public class BD {
             "LOCALIDAD VARCHAR (100)," +
             "PROVINCIA VARCHAR (100)" +
             ");";
+    private static final String SQL_DROP_CREATE_ODONTOLOGOS = "" +
+            "DROP TABLE IF EXISTS ODONTOLOGOS;" +
+            "CREATE TABLE ODONTOLOGOS" +
+            "(" +
+            "ID INT AUTO_INCREMENT PRIMARY KEY," +
+            "APELLIDO VARCHAR (100)," +
+            "NOMBRE VARCHAR (100)," +
+            "MATRICULA VARCHAR (100)" +
+            ");";
+
     private static final Logger LOGGER = Logger.getLogger(BD.class);
 
     public static Connection getConnection () throws Exception{
@@ -41,6 +51,7 @@ public class BD {
             Statement st = conn.createStatement();
             st.execute(SQL_DROP_CREATE_PACIENTES);
             st.execute(SQL_DROP_CREATE_DOMICILIOS);
+            st.execute(SQL_DROP_CREATE_ODONTOLOGOS);
         LOGGER.info("Se crean las tablas en la base de datos con exito");
         }
         catch (Exception e){

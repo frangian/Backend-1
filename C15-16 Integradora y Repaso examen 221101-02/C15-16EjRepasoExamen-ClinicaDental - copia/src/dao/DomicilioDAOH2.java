@@ -45,7 +45,7 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
                 connection.close();
             }
             catch (Exception ex){
-                LOGGER.error("Se produjo un errror al cerrar la conexion de la registracion: "+ex.getMessage());
+                LOGGER.error("Se produjo un error al cerrar la conexion de la registracion: "+ex.getMessage());
                 ex.printStackTrace();
             }
         }
