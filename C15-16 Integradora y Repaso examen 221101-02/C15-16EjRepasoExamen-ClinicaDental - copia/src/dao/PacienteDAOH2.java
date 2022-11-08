@@ -25,23 +25,29 @@ public class PacienteDAOH2 implements iDao<Paciente>{
         LOGGER.info("Se inicia el registro de un paciente nuevo");
         Connection connection = null;
         try{
-//            PreparedStatement psBuscar =connection.prepareStatement(SQL_BUSCAR);
-//            psBuscar.setInt(1,1);
-//            DomicilioDAOH2 daoAux = new DomicilioDAOH2();
-//            Domicilio domicilio = daoAux.buscar(rs.getInt(6));
             connection=BD.getConnection();
+//            Domicilio domicilio = null;
+            PreparedStatement psBuscar =connection.prepareStatement(SQL_BUSCAR);
+            psBuscar.setInt(1,1);
+            ResultSet rs = psBuscar.executeQuery();
+            DomicilioDAOH2 daoAux = new DomicilioDAOH2();
+//            while (rs.next()) {
+                Domicilio domicilio = daoAux.buscar(rs.getInt(1));
+//            }
+
             PreparedStatement psInsert =connection.prepareStatement(SQL_INSERT,Statement.RETURN_GENERATED_KEYS);
             psInsert.setString(1,paciente.getNombre());
             psInsert.setString(2,paciente.getApellido());
             psInsert.setString(3,paciente.getDni());
             psInsert.setObject(4,paciente.getFechaIngreso());
+            psInsert.setInt(5,domicilio.getID());
             psInsert.execute();
-//            ResultSet rs = psBuscar.executeQuery();
-//            ResultSet rs1 = psInsert.getGeneratedKeys();
-//            while (rs1.next()){
-//                LOGGER.info(rs1);
-//                paciente.setID(rs1.getInt(1));
-//            }
+
+            ResultSet rs1 = psInsert.getGeneratedKeys();
+            while (rs1.next()){
+                LOGGER.info(rs1);
+                paciente.setID(rs1.getInt(1));
+            }
             LOGGER.info("Se registraron los datos del nuevo paciente correctamente");
         }
         catch (Exception e){

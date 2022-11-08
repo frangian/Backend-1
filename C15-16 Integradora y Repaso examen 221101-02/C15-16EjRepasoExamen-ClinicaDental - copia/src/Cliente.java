@@ -21,7 +21,6 @@ public class Cliente {
         Paciente paciente3 = new Paciente("Ernesto","Melle","2222", LocalDate.of(1990,10,10),domicilio3);
         Paciente paciente4 = new Paciente("Sofia","Gonzalez","3333", LocalDate.of(1990,10,10),domicilio3);
 
-
         pacienteService.guardarPaciente(paciente1);
 //        pacienteService.actualizarPaciente(paciente);
 //        pacienteService.eliminarPaciente(1);

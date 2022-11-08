@@ -5,40 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6613a952-9ead-4989-82a8-76fef5c9d17d" name="Changes" comment="c15v1.1">
-      <change afterPath="$PROJECT_DIR$/C15-16EjRepasoExamen-ClinicaDental.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/OdontologoDAOH2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Odontologo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C9 Integradora 221025/C9MdT/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C9 Integradora 221025/C9MdT/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C9 Integradora 221025/C9MdT/C9MdT.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C9 Integradora 221025/clase9 profe/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../C9 Integradora 221025/clase9 profe/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/ExamenParcial.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/src/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/src/dao/BD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/src/dao/OdontologoDAOH2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/src/dao/iDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/src/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/src/model/Odontologo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/src/service/OdontologoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ExamenParcial/src/test/OdontologoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/C14EjProfe/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/C14EjProfe/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/C14EjProfe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/C14EjProfe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/clase14/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C14 Patron DAO Data Access Object/clase14/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/C15-16EjRepasoExamen-ClinicaDental.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/C15-16EjRepasoExamen-ClinicaDental.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/dao/BD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/dao/BD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/dao/DomicilioDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/dao/DomicilioDAOH2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/dao/PacienteDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/dao/PacienteDAOH2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/model/Domicilio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/model/Domicilio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/model/Paciente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/model/Paciente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/service/PacienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../C15-16EjRepasoExamen-ClinicaDental/src/service/PacienteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../C9 Integradora 221025/clase9 profe/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../C9 Integradora 221025/clase9 profe/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18Maven221104/C18EjClase/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18Maven221104/C18EjClase/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18Maven221104/C18EjClase/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18Maven221104/C18EjClase/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18Maven221104/C18EjClase/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18Maven221104/C18EjClase/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18Maven221104/C18EjClase/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18Maven221104/C18Profe/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18Maven221104/C18Profe/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18Maven221104/Clase 18 - MAVEN/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../C18Maven221104/Clase 18 - MAVEN/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/PacienteDAOH2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/PacienteDAOH2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/EjercicioRepasoParcial.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/src/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/src/dao/BD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/src/dao/ImpresoraDAOH2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/src/dao/iDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/src/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/src/model/Impresora.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/src/service/ImpresoraService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../EjercicioRepasoParcial/EjercicioRepasoParcial/src/test/ImpresoraServiceTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,22 +61,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Documentos/CTD/Materias/3 bimestre/Backend/C15-16 Integradora y Repaso examen 221101-02/C15-16EjRepasoExamen-ClinicaDental - copia&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Documentos/CTD/Materias/3 bimestre/Backend/C18Maven221104/Clase 18 - MAVEN",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Cliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cliente" />
+      <module name="C15-16EjRepasoExamen-ClinicaDental" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Cliente" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
