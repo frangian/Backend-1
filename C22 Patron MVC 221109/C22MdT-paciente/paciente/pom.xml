@@ -12,7 +12,7 @@
 	<artifactId>paciente</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>paciente</name>
-	<description>Demo project for Spring Boot</description>
+	<description>C22 Mesa de Trabajo Paciente</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
