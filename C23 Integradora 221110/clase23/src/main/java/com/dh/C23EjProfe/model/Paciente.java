@@ -51,20 +51,20 @@ public class Paciente {
         this.fechaIngreso = fechaIngreso;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public Domicilio getDomicilio() {
         return domicilio;
     }
 
     public void setDomicilio(Domicilio domicilio) {
         this.domicilio = domicilio;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public Paciente(String nombre, String apellido, String dni, LocalDate fechaIngreso, Domicilio domicilio) {

@@ -106,21 +106,19 @@ public class PacienteDAOH2 implements IDao<Paciente>{
     @Override
     public Paciente buscarXString(String valor) {
         Connection connection=null;
-        LOGGER.info("Iniciando la busqueda del paciente con id="+valor);
+        LOGGER.info("Iniciando la busqueda del paciente con email = "+valor);
         Paciente paciente=null;
         try{
             connection=BD.getConnection();
             PreparedStatement psSelect=connection.prepareStatement(SQL_SELECT_BY_EMAIL);
             psSelect.setString(1,valor);
             ResultSet rs= psSelect.executeQuery();
-            //Recordar que || Tabla Paciente -> 1,Rodolfo,Baspineiro, 584, 02-11-2022,15(fk)
             DomicilioDAOH2 daoAux= new DomicilioDAOH2();
             while (rs.next()){
                 Domicilio domicilio= daoAux.buscar(rs.getInt(6));
                 paciente=new Paciente(rs.getInt(1),rs.getString(2),
                         rs.getString(3),rs.getString(4),
                         rs.getDate(5).toLocalDate(),domicilio, rs.getString(7));
-                //LocalDate fecha= LocalDate.of(2022,11,1);
             }
         }
         catch (Exception e){

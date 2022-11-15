@@ -28,11 +28,13 @@ public class BD {
 
     private static final String SQL_INSERT="INSERT INTO DOMICILIOS " +
             "(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES " +
-            "('Los Alamos',58,'salta','salta'); INSERT INTO PACIENTES (NOMBRE, APELLIDO, DNI, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES ('Rodo','Baspi','777','2022-11-10',1,'algo');";
+            "('Los Alamos',58,'salta','salta'); " +
+            "INSERT INTO PACIENTES (NOMBRE, APELLIDO, DNI, FECHA_INGRESO, DOMICILIO_ID, EMAIL) " +
+            "VALUES ('Rodo','Baspi','777','2022-11-10',1,'algo');";
 
     public static Connection getConnection() throws Exception{
         Class.forName("org.h2.Driver");
-        return DriverManager.getConnection("jdbc:h2:~/rodolfobaspineiro",
+        return DriverManager.getConnection("jdbc:h2:~/c23",
                 "sa","sa");
     }
     public static void crearTablas(){
