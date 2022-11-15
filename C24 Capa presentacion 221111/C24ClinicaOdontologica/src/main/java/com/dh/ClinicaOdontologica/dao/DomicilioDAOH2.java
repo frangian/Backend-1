@@ -8,14 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DomicilioDAOH2 implements IDao<Domicilio>{
+    private static final Logger LOGGER= Logger.getLogger(DomicilioDAOH2.class);
     private static final String SQL_INSERT="INSERT INTO DOMICILIOS (CALLE," +
             "NUMERO,LOCALIDAD,PROVINCIA) VALUES (?,?,?,?)";
+    private static final String SQL_SELECT="SELECT * FROM DOMICILIOS WHERE ID=?";
     private static final String SQL_UPDATE="UPDATE DOMICILIOS SET CALLE=?, NUMERO=?, LOCALIDAD=?, PROVINCIA=? " +
             "WHERE ID=?";
     private static final String SQL_DELETE="DELETE FROM DOMICILIOS WHERE ID=?";
     private static final String SQL_SELECT_ALL="SELECT * FROM DOMICILIOS";
-    private static final String SQL_SELECT="SELECT * FROM DOMICILIOS WHERE ID=?";
-    private static final Logger LOGGER= Logger.getLogger(DomicilioDAOH2.class);
     @Override
     public Domicilio guardar(Domicilio domicilio) {
         Connection connection=null;
@@ -61,8 +61,12 @@ public class DomicilioDAOH2 implements IDao<Domicilio>{
             ResultSet rs=psSelect.executeQuery();
             while(rs.next()){
                 //completar el domicilio
-                domicilio=new Domicilio(rs.getInt(1),rs.getString(2),
-                        rs.getInt(3),rs.getString(4),rs.getString(5));
+                domicilio=new Domicilio(
+                        rs.getInt(1),
+                        rs.getString(2),
+                        rs.getInt(3),
+                        rs.getString(4),
+                        rs.getString(5));
             }
         }
         catch (Exception e){

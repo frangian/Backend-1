@@ -30,7 +30,9 @@ public class BD {
             "(CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES " +
             "('Los Alamos',58,'salta','salta'); " +
             "INSERT INTO PACIENTES (NOMBRE, APELLIDO, DNI, FECHA_INGRESO, DOMICILIO_ID, EMAIL) " +
-            "VALUES ('Rodo','Baspi','777','2022-11-10',1,'algo');";
+            "VALUES ('Rodo','Baspi','777','2022-11-10',1,'algo');"+
+            "INSERT INTO ODONTOLOGOS (APELLIDO, NOMBRE, MATRICULA)" +
+            "VALUES ('Perez','Juan','MN4578');";
 
     public static Connection getConnection() throws Exception{
         Class.forName("org.h2.Driver");
