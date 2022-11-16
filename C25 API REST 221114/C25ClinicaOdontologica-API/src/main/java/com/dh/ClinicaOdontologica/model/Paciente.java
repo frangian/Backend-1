@@ -11,6 +11,7 @@ public class Paciente {
     private Domicilio domicilio;
     private String email;
 
+    public Paciente(){};
     public Integer getId() {
         return id;
     }

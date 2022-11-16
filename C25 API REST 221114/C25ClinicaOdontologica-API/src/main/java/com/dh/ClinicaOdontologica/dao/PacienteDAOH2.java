@@ -20,7 +20,7 @@ public class PacienteDAOH2 implements IDao<Paciente>{
 
     @Override
     public Paciente guardar(Paciente paciente) {
-        LOGGER.info("Se inicia el registro de un paciente nuevo");
+        LOGGER.info("Se inicia el registro de un paciente nuevo: "+paciente.getNombre()+" "+paciente.getApellido());
         Connection connection = null;
         try{
             connection=BD.getConnection();
@@ -31,17 +31,17 @@ public class PacienteDAOH2 implements IDao<Paciente>{
             psInsert.setString(1,paciente.getNombre());
             psInsert.setString(2,paciente.getApellido());
             psInsert.setString(3,paciente.getDni());
-            psInsert.setObject(4,paciente.getFechaIngreso());
+            psInsert.setDate(4,Date.valueOf(paciente.getFechaIngreso()));
             psInsert.setInt(5, paciente.getDomicilio().getId());
             psInsert.setString(6, paciente.getEmail());
 
             psInsert.execute();
 
-            ResultSet rs1 = psInsert.getGeneratedKeys();
-            while (rs1.next()){
-                paciente.setId(rs1.getInt(1));
+            ResultSet clave = psInsert.getGeneratedKeys();
+            while (clave.next()){
+                paciente.setId(clave.getInt(1));
             }
-            LOGGER.info("Se registraron los datos del nuevo paciente correctamente");
+            LOGGER.info("Se registraron los datos del nuevo paciente: "+paciente.getNombre()+" "+paciente.getApellido()+" correctamente");
         }
         catch (Exception e){
             LOGGER.error("Se produjo un error al registrar el paciente: "+e.getMessage());

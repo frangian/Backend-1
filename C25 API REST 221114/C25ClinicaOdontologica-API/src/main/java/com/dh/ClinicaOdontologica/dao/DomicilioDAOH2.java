@@ -32,7 +32,7 @@ public class DomicilioDAOH2 implements IDao<Domicilio>{
             while(rs.next()){
                 domicilio.setId(rs.getInt(1));
             }
-            LOGGER.info("Se registra el domicilio del paciente correctamente");
+            LOGGER.info("Domicilio registrado correctamente");
         }
         catch (Exception e){
             LOGGER.error("Error: "+e.getMessage());
@@ -86,7 +86,7 @@ public class DomicilioDAOH2 implements IDao<Domicilio>{
 
     @Override
     public void actualizar(Domicilio domicilio) {
-        LOGGER.info("Iniciando la actualización de un domicilio");
+        LOGGER.info("Iniciando la actualización del domicilio");
         Connection connection=null;
         try{
             connection=BD.getConnection();
@@ -97,6 +97,8 @@ public class DomicilioDAOH2 implements IDao<Domicilio>{
             psUpdate.setString(4, domicilio.getProvincia());
             psUpdate.setInt(5,domicilio.getId());
             psUpdate.execute();
+
+            LOGGER.info("Domicilio actualizado correctamente");
         }
         catch (Exception e){
             LOGGER.error("Error: "+e.getMessage());
