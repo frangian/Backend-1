@@ -2,17 +2,19 @@ package com.dh.ClinicaOdontologica.controller;
 
 
 import com.dh.ClinicaOdontologica.model.Odontologo;
+import com.dh.ClinicaOdontologica.model.Turno;
 import com.dh.ClinicaOdontologica.service.OdontologoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.function.EntityResponse;
+
+import java.util.List;
 
 @RestController
-@RequestMapping("/odontologo")
+@RequestMapping("/odontologos")
 public class OdontologoController {
     private OdontologoService odontologoService;
 
@@ -21,13 +23,23 @@ public class OdontologoController {
         this.odontologoService = odontologoService;
     }
 
+//    @GetMapping
+//    public String buscarOdontologoPorID(Model model, @RequestParam("id")Integer id){
+//        Odontologo odontologoBuscado = odontologoService.buscarOdontologoXId(id);
+//        model.addAttribute("nombre",odontologoBuscado.getNombre());
+//        model.addAttribute("apellido",odontologoBuscado.getApellido());
+//        model.addAttribute("matricula",odontologoBuscado.getMatricula());
+//        return "busOdontologo";
+//    }
+
     @GetMapping
-    public String buscarOdontologoPorID(Model model, @RequestParam("id")Integer id){
-        Odontologo odontologoBuscado = odontologoService.buscarOdontologoXId(id);
-        model.addAttribute("nombre",odontologoBuscado.getNombre());
-        model.addAttribute("apellido",odontologoBuscado.getApellido());
-        model.addAttribute("matricula",odontologoBuscado.getMatricula());
-        return "busOdontologo";
+    public ResponseEntity<List<Odontologo>> listarOdontologos (){
+        return ResponseEntity.ok(odontologoService.listarOdontologos()) ;
+    }
+
+    @PostMapping
+    public ResponseEntity<Odontologo> registrarOdontologo (@RequestBody Odontologo odontologo){
+        return ResponseEntity.ok(odontologoService.guardarOdontologo(odontologo));
     }
 
 }
