@@ -8,6 +8,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/pacientes")
 public class PacienteController {
@@ -29,6 +31,20 @@ public class PacienteController {
     }
      */
 
+    @GetMapping("/{id}")
+    public Paciente buscarPaciente(@PathVariable("id") Integer id){
+        Paciente pacienteBuscado = pacienteService.buscarPaciente(id);
+        if(pacienteBuscado!=null){
+            return pacienteService.buscarPaciente(id);
+        }
+        return null;
+    };
+
+    @GetMapping
+    public List<Paciente> listarPacientes(){
+        return pacienteService.buscarTodosPacientes();
+    };
+
     @PostMapping
     public Paciente registrarNuevoPaciente(@RequestBody Paciente paciente){
         return pacienteService.guardarPaciente(paciente);
@@ -45,4 +61,20 @@ public class PacienteController {
             return "El paciente con id: "+paciente.getId()+" no existe en la BD";
         }
     }
+
+    @DeleteMapping
+    public String eliminarPaciente(@RequestBody Paciente paciente){
+        Paciente pacienteBuscado = pacienteService.buscarPaciente(paciente.getId());
+        if(pacienteBuscado!=null){
+            pacienteService.eliminarPaciente(paciente.getId());
+            return "Se elimino el paciente con id: "+paciente.getId();
+        }
+        else {
+            return "El paciente con id: "+paciente.getId()+" no existe en la BD";
+        }
+    }
+
+
+
+
 }
