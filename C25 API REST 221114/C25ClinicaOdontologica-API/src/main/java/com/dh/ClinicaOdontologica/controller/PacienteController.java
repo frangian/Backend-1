@@ -34,25 +34,21 @@ public class PacienteController {
     public Paciente buscarPaciente(@PathVariable("id") Integer id){
         Paciente pacienteBuscado = pacienteService.buscarPaciente(id);
         if(pacienteBuscado!=null){
-            return pacienteService.buscarPaciente(id);
+            return pacienteBuscado;
         }
         return null;
     };
-
     @GetMapping
     public List<Paciente> listarPacientes(){
         return pacienteService.buscarTodosPacientes();
     };
-
     @PostMapping
     public Paciente registrarNuevoPaciente(@RequestBody Paciente paciente){
         return pacienteService.guardarPaciente(paciente);
-    };
-
+    }
     @PutMapping
     public String actualizarPaciente(@RequestBody Paciente paciente){
-        Paciente pacienteBuscado = pacienteService.buscarPaciente(paciente.getId());
-        if(pacienteBuscado!=null){
+        if(pacienteService.buscarPaciente(paciente.getId())!=null){
             pacienteService.actualizarPaciente(paciente);
             return "Se actualizo el paciente con apellido: "+paciente.getApellido();
         }
@@ -60,7 +56,6 @@ public class PacienteController {
             return "El paciente con id: "+paciente.getId()+" no existe en la BD";
         }
     }
-
     @DeleteMapping
     public String eliminarPaciente(@RequestBody Paciente paciente){
         Paciente pacienteBuscado = pacienteService.buscarPaciente(paciente.getId());
@@ -72,6 +67,5 @@ public class PacienteController {
             return "El paciente con id: "+paciente.getId()+" no existe en la BD";
         }
     }
-
 
 }

@@ -33,7 +33,6 @@ public class TurnoController {
             return ResponseEntity.notFound().build();
         }
     }
-
     @PostMapping
     public ResponseEntity<Turno> registarTurno(@RequestBody Turno turno){
         PacienteService pacienteService = new PacienteService();
