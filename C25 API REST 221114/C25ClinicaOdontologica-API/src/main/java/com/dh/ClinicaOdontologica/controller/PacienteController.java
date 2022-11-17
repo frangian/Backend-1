@@ -28,8 +28,7 @@ public class PacienteController {
         model.addAttribute("nombre",pacienteBuscado.getNombre());
         model.addAttribute("apellido",pacienteBuscado.getApellido());
         return "index";
-    }
-     */
+    } */
 
     @GetMapping("/{id}")
     public Paciente buscarPaciente(@PathVariable("id") Integer id){
@@ -73,8 +72,6 @@ public class PacienteController {
             return "El paciente con id: "+paciente.getId()+" no existe en la BD";
         }
     }
-
-
 
 
 }

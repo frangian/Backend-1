@@ -42,4 +42,9 @@ public class OdontologoController {
         return ResponseEntity.ok(odontologoService.guardarOdontologo(odontologo));
     }
 
+//    @GetMapping
+//    public ResponseEntity eliminarOdontologo(@RequestBody Integer id){
+//        return ResponseEntity.ok(odontologoService.eliminarOdontologo(id));
+//    }
+
 }
